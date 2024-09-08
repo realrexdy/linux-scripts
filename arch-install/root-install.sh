@@ -58,11 +58,6 @@ else
 fi
 
 
-grub-install
-grub-mkconfig -o /boot/grub/grub.cfg
-
-
-
 echo "WARNING"
 echo "WARNING"
 echo "WARNING"

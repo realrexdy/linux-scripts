@@ -38,17 +38,16 @@ else
   echo "No Bluetooth"
 fi
 
+
+sudo pacman -S go
 git clone https://aur.archlinux.org/yay.git
 cd yay
 makepkg PKGBUILD
-
-echo "WARNING"
-echo "yay install required"
-
-sudo pacman -S sof-firmware ibus
+sudo pacman -U yay-*
+yay -S brave-bin thunar visual-studio-code-bin
+sudo pacman -S sof-firmware ibus avahi
 
 yay -S auto-cpufreq
-
 sudo cp ./auto-cpufreq.conf /etc/
 
 exit 0
