@@ -45,4 +45,10 @@ makepkg PKGBUILD
 echo "WARNING"
 echo "yay install required"
 
+sudo pacman -S sof-firmware ibus
+
+yay -S auto-cpufreq
+
+sudo cp ./auto-cpufreq.conf /etc/
+
 exit 0
